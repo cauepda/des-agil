@@ -19,7 +19,7 @@ public class Panel extends JPanel implements KeyListener {
     private final int height;
     private final Image background;
     private final Image sprite;
-    private final Ship ship;
+    //private final Ship ship;
 
     public Panel() {
         int width = WIDTH * CELL_SIZE;
@@ -32,7 +32,7 @@ public class Panel extends JPanel implements KeyListener {
         this.height = height;
         this.background = readImage("/background.png");
         this.sprite = readImage("/sprite.png");
-        this.ship = new Ship(3, 2);
+        //this.ship = new Ship(3, 2);
     }
 
     private Image readImage(String path) {
@@ -55,25 +55,25 @@ public class Panel extends JPanel implements KeyListener {
         super.paintComponent(g);
         g.drawImage(background, 0, 0, width, height, null);
 
-        int x = ship.getX() * CELL_SIZE;
-        int y = ship.getY() * CELL_SIZE;
-        g.drawImage(sprite, x, y, CELL_SIZE, CELL_SIZE, null);
+        //int x = ship.getX() * CELL_SIZE;
+        //int y = ship.getY() * CELL_SIZE;
+        //g.drawImage(sprite, x, y, CELL_SIZE, CELL_SIZE, null);
     }
 
     @Override
     public void keyPressed(KeyEvent event) {
         switch (event.getKeyCode()) {
             case KeyEvent.VK_LEFT:
-                ship.move(-1, 0);
+                //ship.move(-1, 0);
                 break;
             case KeyEvent.VK_RIGHT:
-                ship.move(1, 0);
+                //ship.move(1, 0);
                 break;
             case KeyEvent.VK_UP:
-                ship.move(0, -1);
+                //ship.move(0, -1);
                 break;
             case KeyEvent.VK_DOWN:
-                ship.move(0, 1);
+                //ship.move(0, 1);
                 break;
             default:
                 System.err.println("Key not supported");

@@ -1,2 +1,4 @@
-# des-agil
-Repositório da matéria Desenvolvimento Colaboratívo Ágil do 3° semestre de Engenharia de Computação.
+desagil-aula
+============
+
+Material de aula da disciplina *Desenvolvimento Colaborativo Ágil* do Insper.
